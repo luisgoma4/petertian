@@ -12,10 +12,14 @@
 | T-08 | Página de música, 4 bloques, PL/EN | music | hecho | 2026-09-03 |
 | T-09 | Puerta en la raíz con dos botones | — | hecho | 2026-09-03 |
 | T-10 | Auditoría automática (`qa-verifier`) | ambas | hecho | 2026-09-03 |
-| T-11 | Revisión visual en navegador por el usuario | ambas | en curso | 2026-09-03 |
-| T-12 | Repo git + Cloudflare Pages | — | en curso | 2026-09-03 |
-| T-13 | Dominio personalizado en Pages + HTTPS | — | pendiente | — |
+| T-11 | Revisión visual en navegador por el usuario | ambas | hecho | 2026-09-03 |
+| T-12 | Repo git + Cloudflare Pages | — | hecho | 2026-09-03 |
+| T-13 | Dominio personalizado en Pages + HTTPS | — | hecho | 2026-09-03 |
+| T-16 | Activar Always Use HTTPS en Cloudflare | — | pendiente | — |
+| T-17 | Elegir canónico (ápex) y redirigir www | — | pendiente | — |
 | T-14 | Bloque de precios | ambas | bloqueado | — |
 | T-15 | Instagram de mandarín | mandarin | bloqueado | — |
 
 Bloqueadas por datos del cliente: T-14, T-15. Ver `docs/pendiente-cliente.md`.
+
+T-16 y T-17 son ajustes en el panel de Cloudflare, no tocan el repo.
