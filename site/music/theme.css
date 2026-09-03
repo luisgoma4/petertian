@@ -1,0 +1,78 @@
+/* theme.css — Music. Tokens extraidos de la foto de directo:
+   sala oscura, morado de foco y estelas ambar de larga exposicion. */
+
+:root {
+  --bg: #14101C;
+  --bg-alt: #1D1729;
+  --ink: #F4F1F8;
+  --ink-soft: #A79DBB;
+  --accent: #F2A33C;
+  --violet: #7B4FE0;        /* solo superficies y graficos (3.6:1 sobre --bg) */
+  --violet-text: #A98BF0;   /* variante legible para texto pequeno (6.8:1) */
+  --on-accent: #14101C;
+  --rule: #362C4A;
+  --focus: #F2A33C;
+
+  --font-display: "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-body: "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --radius-photo: 6px;
+  --radius-btn: 999px;
+  --shadow-photo: 0 24px 60px rgba(123, 79, 224, 0.35);
+}
+
+/* Halo de escenario: dos focos difusos, sin imagen que descargar. */
+body {
+  background-image:
+    radial-gradient(ellipse at 78% 6%, rgba(123, 79, 224, 0.32), transparent 55%),
+    radial-gradient(ellipse at 8% 88%, rgba(242, 163, 60, 0.14), transparent 52%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3 { font-weight: 800; }
+
+.hero-title {
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.hero-title .instrument {
+  display: block;
+  font-size: 0.5em;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  margin-top: 0.5rem;
+}
+
+/* Estela ambar bajo el titular, eco de la larga exposicion */
+.hero-title::after {
+  content: "";
+  display: block;
+  width: clamp(6rem, 22vw, 11rem);
+  height: 3px;
+  margin-top: 1.25rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--violet));
+}
+
+.hero-sub { color: var(--ink-soft); }
+
+.section-title { color: var(--ink); }
+
+.about { background: var(--bg-alt); }
+
+.eyebrow { color: var(--violet-text); }
+
+.mode svg { background: var(--violet); color: var(--ink); }
+
+.checks svg { color: var(--accent); }
+
+.hero-photo { filter: saturate(1.05); }
+
+.btn { font-weight: 700; }
+
+.btn--ghost { color: var(--ink); border-color: var(--rule); }
+.btn--ghost:hover { background: var(--violet); border-color: var(--violet); color: var(--ink); }
+
+footer { color: var(--ink-soft); }

@@ -1,0 +1,105 @@
+/* theme.css — Mandarin. Tokens extraidos del flyer de Peter:
+   papel kraft, azul marino, burdeos, titulares serif con contraste alto. */
+
+:root {
+  --bg: #F2E9D8;
+  --bg-alt: #EADFC8;
+  --ink: #26221C;
+  --ink-soft: #5C544A;
+  --navy: #1E3552;
+  --accent: #8C2F27;
+  --on-accent: #F7F1E4;
+  --rule: #C9B99B;
+  --focus: #1E3552;
+
+  --font-display: "Bookman Old Style", "Georgia", "Times New Roman", serif;
+  --font-body: "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --radius-photo: 4px;
+  --radius-btn: 3px;
+  --shadow-photo: 0 18px 40px rgba(38, 34, 28, 0.22);
+}
+
+/* Textura de papel: dos gradientes muy suaves, sin imagen que descargar. */
+body {
+  background-image:
+    radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.55), transparent 42%),
+    radial-gradient(circle at 82% 78%, rgba(201, 185, 155, 0.35), transparent 48%);
+  background-attachment: fixed;
+}
+
+.hero-title {
+  color: var(--navy);
+  letter-spacing: -0.015em;
+}
+
+.hero-title .lessons {
+  display: block;
+  font-size: 0.62em;
+  color: var(--accent);
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-stretch: condensed;
+  line-height: 0.98;
+  margin-top: 0.25rem;
+}
+
+.hero-sub { color: var(--navy); }
+
+/* Sello 中文教学, replica del cuadro rojo del flyer */
+.seal {
+  position: absolute;
+  top: clamp(3.5rem, 9vw, 4.5rem);
+  right: clamp(1.25rem, 4vw, 2rem);
+  writing-mode: vertical-rl;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: clamp(0.9rem, 2.6vw, 1.15rem);
+  letter-spacing: 0.28em;
+  padding: 0.85rem 0.5rem;
+  border-radius: 2px;
+  box-shadow: 0 6px 18px rgba(140, 47, 39, 0.3);
+}
+
+.section-title { color: var(--navy); }
+
+.about { background: var(--bg-alt); }
+
+/* Franja inferior burdeos, como el pie del flyer */
+.tagline {
+  background: var(--accent);
+  color: var(--on-accent);
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: clamp(0.75rem, 2.4vw, 0.9375rem);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-block: 1.1rem;
+}
+
+/* Chapa 你好 */
+.badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--bg);
+  color: var(--accent);
+  text-align: center;
+  font-family: var(--font-display);
+  line-height: 1.15;
+  margin-inline: auto;
+  margin-bottom: 1.75rem;
+}
+
+.badge .hanzi { font-size: 1.6rem; letter-spacing: 0.06em; }
+.badge .say { font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; }
+
+footer { color: var(--ink-soft); }

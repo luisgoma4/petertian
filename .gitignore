@@ -1,0 +1,8 @@
+.DS_Store
+.claude/settings.local.json
+node_modules/
+*.log
+
+# Originales del cliente: pesados y no hacen falta para desplegar.
+# Se conservan en local; ver docs/02-design-system.md para regenerar site/**/img/.
+assets-src/
