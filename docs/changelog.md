@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-31
+
+- Revisión de seguridad tras el «octubre negro»: sin cambios de código.
+  Pendientes de baja severidad en `docs/seguridad-2026-10-31.md`.
+
 ## 2026-09-03
 
 - Creado el orquestador de PeterTian: constitución de 9 reglas, 6 agentes

@@ -29,6 +29,7 @@ La memoria del proyecto es `docs/`, no el historial.
 | Estado de tareas | `docs/tasks.md` | `docs-librarian` |
 | Registro de cambios | `docs/changelog.md` | `docs-librarian` |
 | Pendientes del cliente | `docs/pendiente-cliente.md` | `docs-librarian` |
+| Revisión de seguridad 2026-10-31 | `docs/seguridad-2026-10-31.md` | hilo principal |
 
 Si un artefacto no existe, la fase que lo produce no se ha ejecutado. No
 improvises su contenido: ejecuta la fase.
